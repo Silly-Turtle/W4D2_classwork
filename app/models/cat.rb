@@ -18,16 +18,16 @@ validates :color, inclusion: { in: %w(brown black white gray orange),
   message: "%{value} is not a valid color" }
 validates :sex, inclusion: {in: %w(M F), message: "%{value} is not a valid sex"}
 
-def initialize(birth_date)
-  @birth_date = birth_date
-end
+# def initialize(birth_date)
+#   @birth_date = birth_date
+# end
 
-def age
-  now = DateTime.now
-  now.strftime("%d/%m/%Y %H:%M")
-  birth_date.strftime("%d/%m/%Y %H:%M")
-  now - birth_date
-end
+# def age
+#   now = DateTime.now
+#   now.strftime("%d/%m/%Y %H:%M")
+#   birth_date.strftime("%d/%m/%Y %H:%M")
+#   now - birth_date
+# end
 
 
 

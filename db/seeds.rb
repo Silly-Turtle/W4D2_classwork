@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Cat.create(name: 'Star', sex: 'M', color: 'brown', description: "fun", birth_date: '28/12/2015')
+Cat.create(name: 'Lord', sex: 'M', color: 'brown', description: "fun", birth_date: '28/12/2015')
+ 
