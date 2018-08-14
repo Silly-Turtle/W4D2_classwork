@@ -1,9 +1,10 @@
 <h1>Here's a cat</h1>
 
 <ul>
-  <li> <%=@cat.name%></li>
-  <li> <%=@cat.color%></li>
-  <li> <%=@cat.sex%></li>
-  <li> <%=@cat.birth_date%></li>
-  <li> <%=@cat.description%></li>
+  <li>Name: <%=@cat.name%></li>
+  <li>Color:  <%=@cat.color%></li>
+  <li>Sex: <%=@cat.sex%></li>
+  <li>Birthday: <%=@cat.birth_date%></li>
+  <li>Description: <%=@cat.description%></li>
 </ul>
+<a href="/cats/<%= @cat.id %>/edit">Edit</a>

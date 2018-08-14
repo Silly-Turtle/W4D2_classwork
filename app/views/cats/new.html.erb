@@ -1,33 +1,4 @@
 <h1>NEW CAT</h1>
 
-<form action="/cats" method="post">
-  <label for="name">Name</label>
-  <input id='name' type="text" name="cat[name]" value="">
-  <br>
-  <input id='male' type="radio" name="cat[sex]" value="M">
-  <label for="male">M</label>
-  <br>
-  <input type="radio" name="cat[sex]" value="F">
-  <label for="male">F</label>
-  <br>
-  <label for="color">Color</label>
-  <select class="color" name='cat[color]'>
-    <option disabled selected>Select Color:</option>
-    <option value="brown">Brown</option>
-    <option value="black">Black</option>
-    <option value="white">White</option>
-    <option value="orange">Orange</option>
-    <option value="gray">Gray</option>
-  </select>
-  <br>
-  <label for="date">Date of Birth</label>
-  <input type="date" name="cat[birth_date]" value="birth_date">
-  <br>
-  <label for="description">Description</label>
-  <br>
 
-  <textarea id='description' name="description"></textarea>
-  <br>
-  <input type="submit" value="Add cat to directory">
-
-</form>
+<%= render 'form', cat: @cat, action: :new %>
